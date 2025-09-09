@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<title>웹 페이지의 구성 요소</title>
+<style>
+body { background-color : linen; color : green;
+margin-left : 40px; margin-right : 40px;}
+h3 { text-align : center; color : darkred;}
+hr { height : 5px; border : solid grey;
+background-color : grey }
+span { color: blue; font-size: 20px; }
+#fig {
+    width: 300px; 
+    height: auto;
+</style>
+<script>
+function show() { // <img>에 이미지 달기
+document.getElementById("fig").src = "C:/Users/대현쓰/Desktop/웹 프로그래밍/daehyeon.jpg";
+}
+function hide() { // <img>에 이미지 제거
+document.getElementById("fig").src= "";
+}
+</script>
+</head>
+<body>
+<h3 onmouseover="show()" onmouseout="hide()">
+김대현</h3>
+<hr>
+<div><img id="fig" src=""></div>
+저는 경성대학교 소프트웨어학과에 다니는 김대현입니다. 웹 프로그래밍 과목을 
+잘 배우고 얻어가는 수업이 되었으면 좋겠습니다.
+</body>
+</html>
