@@ -1,13 +1,15 @@
-import java.util.scanner;
+import java.util.Scanner;
 
-public class Main {
+public class a1 {
     public static void main(String[] args){
-      scanner a = New scanner(System.in);
-if(a%4==0 && a%100!=0 && a%400==0){
-    console.log("윤년")
+     Scanner sc = new Scanner(System.in);
+      System.out.print("년도를 입력하세요:");
+     int a = sc.nextInt();
+if((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0)){
+    System.out.println("윤년");
 }
 else {
-  console.log("평년")
+  System.out.println("평년");
 }
 }
 }
