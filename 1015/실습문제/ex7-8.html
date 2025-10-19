@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex7-8</title>
+  <style>
+    div{
+        display: inline-block;
+        width: 150px;
+        padding : 10px; 
+    }
+    </style>
+</head>
+<body>
+  <h3>16개의 css 색이름과 색</h3>
+  <hr>
+  <script>
+    for(i=0;i<16;i++){
+      var color = 'rgb('+Math.floor(Math.random()*256)+','+Math.floor(Math.random()*256)+','+Math.floor(Math.random()*256)+')';
+      document.write('<div style = "background:'+color+'">'+color+'</div>');
+    }
+
+  </script>
+  
+</body>
+</html>
